@@ -1,0 +1,17 @@
+	.Faire un portfolio sous forme d'un site web qui peut être heberger sur alwaysdata ou sur github
+
+
+
+	. Compétence Requise:
+-HTML
+-CSS
+-JS
+-Git
+
+	. Compétence en cours d'acquisition:
+
+-Git et GitHub
+
+	. Compétence Manquante:
+
+-JS
