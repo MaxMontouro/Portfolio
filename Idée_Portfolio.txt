@@ -15,3 +15,6 @@
 	. Compétence Manquante:
 
 -JS
+-PHP
+
+	. Peut-être mettre en place une BD ? 
