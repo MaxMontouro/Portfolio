@@ -1,0 +1,3 @@
+Compétence mise en oeuvre:
+	-Compétence 3: Administrer des systèmes informatiques communicants complexes
+installer et configerer un poste de dév
