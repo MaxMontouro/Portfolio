@@ -1,0 +1,6 @@
+Compétence mise en oeuvre:
+	-Compétence 1: Réaliser un dév d'appli
+Développer une application (c++)complexe
+
+	-Compétence 2:
+Création d'algorithme optimisé selon les besoins identifiés

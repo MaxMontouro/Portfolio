@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>mouvement joueur</nom>
+  <date_creation>20/1/2023 12:12</date_creation>
+  <Elements>
+    <Action>
+      <Position>567;20</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>grilleTaquin</PreAssertion>
+      <PostAssertion>mouvementJoueur, [abandonner]</PostAssertion>
+      <Titre>Saisir Mouvement joueur</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>741.5;140.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>76;272</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>afficher "Quel mouvement souhaitez-vous faire (a pour abandonner) ? "</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>931;278</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>∅</PreAssertion>
+              <PostAssertion>mouvementJoueur</PostAssertion>
+              <Titre>Selectionner Formule</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>

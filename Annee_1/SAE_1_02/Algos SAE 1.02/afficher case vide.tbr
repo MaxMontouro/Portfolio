@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>afficher case vide</nom>
+  <date_creation>19/1/2023 19:43</date_creation>
+  <Elements>
+    <Action>
+      <Position>447;120</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>afficherCaseVide(int grilleTaquin[][NB_COLONNE], const unsigned short int NB_LIGNE, const unsigned short int NB_COLONNE)</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>634.5;251.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>pour indiceParcours allant de 0 à NB_LIGNE</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Iteration>
+              <Position>636.5;331.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>pour indiceParcoursColonne allant de 0 à NB_COLONNE</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Condition>
+                  <Position>465.5;459</Position>
+                  <StyleLien>0</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>si grilletaquin[indiceParcours][indiceParcoursColonne] = 0</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>604;605</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Afficher "    "</Titre>
+                          <DetailsVisible>1</DetailsVisible>
+                          <DetailsVideVisible>0</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>

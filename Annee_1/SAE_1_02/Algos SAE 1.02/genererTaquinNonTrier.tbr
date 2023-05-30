@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>genererTaquinNonTrier</nom>
+  <date_creation>20/1/2023 12:13</date_creation>
+  <Elements>
+    <Action>
+      <Position>473;8</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>grilleTaquin[][NB_COLONNE], reponseJeu</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>genererTaquinNonTrier</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>79;183</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>mouvementRandom, mouvementRandomTour1, nombreTourMelange, positionCaseVide, coordonneX, coordonneeY, deplacementAFaire,
+caseChoisiPourDeplacement, mouvementPrecedent</PostAssertion>
+          <Titre>initialisation</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Iteration>
+          <Position>1275.5;136.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>pour indiceParcoursMelange de 0 à mouvementRandom</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Condition>
+              <Position>1169.5;248</Position>
+              <StyleLien>0</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>nombreTourMelange = 1</Titre>
+                  <Enfants>
+                    <Condition>
+                      <Position>470.5;430</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>mouvementRandomTour1 = 1</Titre>
+                          <Enfants>
+                            <Procedure>
+                              <Position>-10;606</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>faireMouvementBas(grilleTaquin, positionCaseVide,  caseChoisiPourDeplacement, coordonneeX, coordonneeY)</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Procedure>
+                            <Action>
+                              <Position>437;618</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>nombreTourMelange++</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>209;737</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>reponseJeu += to_string(grilleTaquin[coordonneeX][coordonneeY])+ deplacementAFaire + "  "</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>591;618</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>mouvementPrecedent = 1</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants>
+                            <Procedure>
+                              <Position>771;589</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>faireMouvementBas(grilleTaquin, positionCaseVide,  caseChoisiPourDeplacement, coordonneeX, coordonneeY)</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Procedure>
+                            <Action>
+                              <Position>1209;587</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>nombreTourMelange++</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>1243;706</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>reponseJeu += to_string(grilleTaquin[coordonneeX][coordonneeY])+ deplacementAFaire + "  "</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>1494;594</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>mouvementPrecedent = 2</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants>
+                    <Condition>
+                      <Position>1968.5;474</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>mouvementPrecedent = 1</Titre>
+                          <Enfants/>
+                        </operation>
+                        <operation>
+                          <Titre>mouvementPrecedent = 2</Titre>
+                          <Enfants/>
+                        </operation>
+                        <operation>
+                          <Titre>mouvementPrecedent = 3</Titre>
+                          <Enfants/>
+                        </operation>
+                        <operation>
+                          <Titre>mouvementPrecedent = 4</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+  <Dictionary/>
+</Algorithme>

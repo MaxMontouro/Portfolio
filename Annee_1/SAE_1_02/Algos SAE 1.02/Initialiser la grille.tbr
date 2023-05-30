@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>5/1/2023 12:28</date_creation>
+  <Elements>
+    <Procedure>
+      <Position>695;345</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>∅</PreAssertion>
+      <PostAssertion>∅</PostAssertion>
+      <Titre>melangerTaquin</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Procedure>
+    <Action>
+      <Position>639;33</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>modeDebug</PreAssertion>
+      <PostAssertion>∅</PostAssertion>
+      <Titre>Initialiser la grille</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Procedure>
+          <Position>1132;291</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>∅</PreAssertion>
+          <PostAssertion>∅</PostAssertion>
+          <Titre>inverserMouvementSolution</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Procedure>
+        <Action>
+          <Position>262;209</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>int grilleTaquin</PostAssertion>
+          <Titre>generer la grille de taquin</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Procedure>
+              <Position>206;337</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>genererTaquin (usigned short int tab [ ] [ ]);</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Procedure>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+    <Procedure>
+      <Position>454;592</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>modeDebug</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>genererTaquinNonTrier (int grilleTaquin[][10], unsigned short int ligneUtile, unsigned short int colonneUtile, bool modeDebug)</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants/>
+    </Procedure>
+  </Elements>
+  <Dictionary/>
+</Algorithme>
