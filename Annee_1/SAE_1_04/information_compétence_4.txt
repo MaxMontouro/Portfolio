@@ -1,6 +1,0 @@
-Compétence mise en oeuvre:
-	-Compétence 4: Gérer des données de l'information
-Concevoir et mettre en place une BD à partir d'un cahier des charges client
-Création de schémas relationnels
-Création de diagramme de classes UML
-Création de dictionnaire des données
