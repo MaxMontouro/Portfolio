@@ -3,7 +3,7 @@ import { Shield, Terminal, Cpu, Network, Lock, Code, Mail, Github, Linkedin, Che
 import { Bug } from 'lucide-react';
 
 function App() {
-  let Bug = {};  // or assign a proper object structure if needed
+  let bugData = {};  // or assign a proper object structure if needed
 
   const skills = [
     {
@@ -81,7 +81,7 @@ function App() {
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition"></div>
                 <img 
-                  src="./public/wrench_portrait.jpg"
+                  src="/Portfolio/wrench_portrait.jpg"
                   alt="Photo de profil"
                   className="relative w-full h-[400px] object-cover rounded-lg"
                 />
