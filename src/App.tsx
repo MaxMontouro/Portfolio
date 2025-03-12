@@ -362,7 +362,7 @@ function App() {
                 <Mail className="w-6 h-6" />
               </a>
               <a 
-                href="https://www.root-me.org/" 
+                href="https://www.root-me.org/Mqks_" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-green-500 hover:text-green-400 transition flex items-center gap-2"
